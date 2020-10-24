@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "xjs tsc build",
+    "build": "xjs @stack tsc",
     "tsc-watch": "tsc --watch",
     "dev": "ts-node-dev --respawn --transpile-only app.ts",
     "start": "yarn run build && node build/app.js",
@@ -16,13 +16,13 @@
   },
   "dependencies": {
     "express-edge": "^2.0.2",
-    "xpresser": "^0.2.78"
+    "xpresser": "^0.2.83"
   },
   "devDependencies": {
-    "@types/node": "^14.11.7",
-    "nodemon": "^2.0.4",
-    "ts-node-dev": "^1.0.0-pre.63",
+    "@types/node": "^14.14.2",
+    "nodemon": "^2.0.6",
+    "ts-node-dev": "^1.0.0",
     "typescript": "^4.0.3",
-    "xjs-cli": "^0.1.28"
+    "xjs-cli": "^0.1.35"
   }
 }

@@ -4,7 +4,7 @@ import config from "./config"
 // Start Xpresser
 const $ = xpresser(config);
 
-//Initialize Typescript for this project.
+// Initialize Typescript for this project.
 $.initializeTypescript(__filename);
 
 // Boot
