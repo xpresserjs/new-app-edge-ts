@@ -1,6 +1,6 @@
 {
   "name": "new-app-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Xpresser Typescript App Boilerplate using Edge.js Template Engine.",
   "main": "app.js",
   "repository": "https://github.com/xpresserjs/new-app-ts",
