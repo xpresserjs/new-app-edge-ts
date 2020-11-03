@@ -17,7 +17,7 @@ class AppController extends $.controller {
      * Serves as a middleware for all roots
      *
      * Whatever is returned in boot method
-     * is passed as the second method on all methods.
+     * is passed as the second arguments on all methods.
      *
      * @param {Xpresser.Http} http
      * @return {object|*}

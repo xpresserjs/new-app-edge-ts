@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "express-edge": "^2.0.2",
-    "xpresser": "^0.2.95"
+    "xpresser": "^0.2.96"
   },
   "devDependencies": {
     "@types/node": "^14.14.6",
