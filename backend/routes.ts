@@ -1,10 +1,8 @@
-import {DollarSign} from "xpresser/types";
-
-declare const $: DollarSign;
+import {getInstanceRouter} from "xpresser";
 /**
  * $.router - XpresserRouter
  */
-const route = $.router;
+const route = getInstanceRouter();
 
 /**
  * Name in routes is not compulsory.

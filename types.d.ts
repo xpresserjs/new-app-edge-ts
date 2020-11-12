@@ -1,1 +1,1 @@
-declare module "express-edge"
+declare module 'express-edge';

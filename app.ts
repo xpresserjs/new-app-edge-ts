@@ -1,8 +1,8 @@
-import xpresser from "xpresser";
+import {init} from "xpresser";
 import config from "./config"
 
 // Start Xpresser
-const $ = xpresser(config);
+const $ = init(config, {exposeDollarSign: false});
 
 // Initialize Typescript for this project.
 $.initializeTypescript(__filename);

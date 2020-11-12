@@ -1,14 +1,14 @@
-import {DollarSign} from "xpresser/types";
+import {getInstance, ControllerClass} from "xpresser";
 import {Http} from "xpresser/types/http";
 
-declare const $: DollarSign;
+const $ = getInstance();
 
 /**
  * AppController
  * @class
  * @extends $.controller
  */
-class AppController extends $.controller {
+class AppController extends ControllerClass {
 
     /**
      * Boot Method

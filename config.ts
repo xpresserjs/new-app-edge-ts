@@ -1,4 +1,5 @@
-import {engine} from "express-edge";
+// @ts-ignore - Suppress express-edge type declaration error
+import expressEdge = require('express-edge');
 
 /**
  * Your App Configuration
@@ -80,7 +81,7 @@ export = {
      * In order to use express-edge.
      */
     template: {
-        use: engine,
+        use: expressEdge.engine,
         // Set extension of templates
         extension: 'edge'
     },
