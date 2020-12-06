@@ -48,25 +48,29 @@ class AppController extends ControllerClass {
          */
         let theme: string = http.query("theme", null);
 
+        console.log(http.sessionID)
+
         // Check if theme is bulma/bootstrap
-        if (["bulma", "bootstrap"].includes(theme)) {
+        if (http.session) {
+            if (["bulma", "bootstrap"].includes(theme)) {
 
-            // Set Theme to session
-            http.session.theme = theme;
-
-        } else {
-            // if no query and session exists set theme to session value
-            if (http.session.theme) {
-
-                theme = http.session.theme
+                // Set Theme to session
+                http.session.theme = theme;
 
             } else {
-                // Get Config {project.theme} else return null
-                theme = $.config.get('project.theme', null);
+                // if no query and session exists set theme to session value
+                if (http.session.theme) {
 
-                // If null we need a config.. we throw error.
-                if (theme === null) {
-                    throw new Error("{project.theme} config is required! Use bulma/bootstrap")
+                    theme = http.session.theme
+
+                } else {
+                    // Get Config {project.theme} else return null
+                    theme = $.config.get('project.theme', null);
+
+                    // If null we need a config.. we throw error.
+                    if (theme === null) {
+                        throw new Error("{project.theme} config is required! Use bulma/bootstrap")
+                    }
                 }
             }
         }

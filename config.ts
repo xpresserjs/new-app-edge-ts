@@ -1,4 +1,3 @@
-// @ts-ignore - Suppress express-edge type declaration error
 import expressEdge = require('express-edge');
 
 /**
