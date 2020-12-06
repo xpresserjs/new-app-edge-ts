@@ -48,8 +48,6 @@ class AppController extends ControllerClass {
          */
         let theme: string = http.query("theme", null);
 
-        console.log(http.sessionID)
-
         // Check if theme is bulma/bootstrap
         if (http.session) {
             if (["bulma", "bootstrap"].includes(theme)) {
