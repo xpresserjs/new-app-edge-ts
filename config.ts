@@ -69,11 +69,6 @@ export = {
          * by setting this to false
          */
         includePortInUrl: true,
-
-        /**
-         * Use Session Config
-         */
-        use: {session: true}
     },
 
     /**
@@ -84,11 +79,4 @@ export = {
         // Set extension of templates
         extension: 'edge'
     },
-
-    /**
-     * Enable Session
-     */
-    session: {
-        useDefault: true
-    }
 };
