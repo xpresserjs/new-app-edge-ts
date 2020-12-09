@@ -17,7 +17,7 @@
   "dependencies": {
     "@xpresser/session": "^1.0.20",
     "express-edge": "^2.0.2",
-    "xpresser": "^0.4.2"
+    "xpresser": "^0.4.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.6",
