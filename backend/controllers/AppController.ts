@@ -46,7 +46,7 @@ class AppController extends ControllerClass {
          * Helps you get config variables or set default if they don't
          * exist to avoid errors.
          */
-        let theme: string = http.query("theme", null);
+        let theme: string = http.query("theme");
 
         // Check if theme is bulma/bootstrap
         if (http.session) {
