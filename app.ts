@@ -6,7 +6,7 @@ import xpresser = require("xpresser");
  * Get config from config.ts
  * See https://xpresserjs.com/configuration/
  */
-import config from "./config"
+import config = require("./config");
 
 // Start Xpresser
 const $ = xpresser.init(config, {exposeDollarSign: false});
