@@ -2,7 +2,7 @@
   "name": "new-app-ts",
   "version": "1.0.1",
   "description": "Xpresser Typescript App Boilerplate using Edge.js Template Engine.",
-  "main": "app.js",
+  "main": "app.ts",
   "repository": "https://github.com/xpresserjs/new-app-ts",
   "author": "xpresserjs",
   "license": "MIT",
