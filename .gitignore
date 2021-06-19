@@ -129,4 +129,5 @@ cron-cmd.js
 
 storage/framework
 yarn.lock
+.prettierrc
 
