@@ -8,15 +8,15 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "xjs @stack tsc",
-    "ts-watch": "tsc --watch",
-    "ts-dev": "ts-node-dev --respawn app.ts",
+    "build": "npx xjs @stack tsc",
+    "ts-watch": "npx tsc --watch",
+    "ts-dev": "npx ts-node-dev --respawn app.ts",
     "start": "npm run build && node build/app.js",
     "node-dev": "nodemon build/app.js"
   },
   "dependencies": {
     "express-edge": "^2.0.2",
-    "xpresser": "^0.23.2"
+    "xpresser": "^0.24.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7",
