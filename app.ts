@@ -1,4 +1,4 @@
-import xpresser = require("xpresser");
+import {init} from "xpresser";
 
 /**
  * Boot Xpresser with your config
@@ -9,7 +9,7 @@ import xpresser = require("xpresser");
 import config = require("./config");
 
 // Start Xpresser
-const $ = xpresser.init(config);
+const $ = init(config);
 
 // Initialize Typescript for this project.
 $.initializeTypescript(__filename);
