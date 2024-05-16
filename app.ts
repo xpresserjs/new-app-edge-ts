@@ -6,7 +6,7 @@ import {init} from "xpresser";
  * Get config from config.ts
  * See https://xpresserjs.com/configuration/
  */
-import config = require("./config");
+import config from "./config";
 
 // Start Xpresser
 const $ = init(config);
