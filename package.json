@@ -12,7 +12,7 @@
     "dev": "npx tsx watch app.ts",
     "start": "npm run build && node build/app.js",
     "ts:watch": "npx tsc --watch",
-    "dev:node": "nodemon build/app.js"
+    "dev:node": "npx nodemon build/app.js"
   },
   "dependencies": {
     "express-edge": "^3.0.0",

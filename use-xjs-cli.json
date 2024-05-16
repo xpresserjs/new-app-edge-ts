@@ -8,17 +8,17 @@
   },
   "prod": {
     "main": "build/app.js",
-    "start_cron": "pm2 start",
-    "stop_cron": "pm2 stop",
-    "start_server": "pm2 start",
-    "stop_server": "pm2 stop",
+    "start_cron": "npx pm2 start",
+    "stop_cron": "npx pm2 stop",
+    "start_server": "npx pm2 start",
+    "stop_server": "npx pm2 stop",
     "start_console": "node",
     "jobs_path": "build/backend/jobs"
   },
   "stacks": {
     "tsc": [
       "rm -rf build",
-      "tsc -p tsconfig.json",
+      "npx tsc -p tsconfig.json",
       "cp -r ./public ./build/public"
     ]
   }
