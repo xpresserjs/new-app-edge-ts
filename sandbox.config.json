@@ -2,7 +2,7 @@
   "template": "node",
   "node": "18",
   "container": {
-    "startScript": "ts-dev",
+    "startScript": "dev",
     "node": "18"
   }
 }
